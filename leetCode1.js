@@ -19,6 +19,7 @@
 
 // 1 <= s.length <= 105
 // s consists of lowercase English letters.
+console.log(2*1-1);
 
 
 let s="abbacaacda";
