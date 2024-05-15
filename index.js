@@ -40,10 +40,16 @@
 // }
 // console.log(secondLar([1,2,3,4]));
 
-// function name(sum) {
-//    return sum(1,2);
-// }
-// function sum(a,b) {
-//     return a+b;  
-// }
-// console.log(name(sum));
+function hof(sum){
+    sum()
+}
+function subService(){
+    console.log(2+8);
+}
+function addService(){
+    console.log(2-8);
+}
+function multiService(){
+    console.log(2*8);
+}
+hof(subService)
