@@ -31,3 +31,16 @@ order.addEventListener("click",()=>{
         })
     })
 })
+
+//promise
+
+let orderPizza =()=>{
+    return new Promise((res,rej)=>{
+    orderPlaced=true;
+    if(orderPlaced){
+        res(`log`);
+    }else{
+        rej(`error`);
+    }
+    });
+};
