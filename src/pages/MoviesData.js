@@ -1,0 +1,66 @@
+
+
+const MoviesData = [
+
+    {
+        "Title":"Titanic",
+        "Year":"1997",
+        "Rated":"PG-13",
+        "Released":"19 Dec 1997",
+        "Runtime":"194 min",
+        "Genre":"Drama, Romance",
+        "Director":"James Cameron",
+        "Writer":"James Cameron",
+        "Actors":"Leonardo DiCaprio, Kate Winslet, Billy Zane",
+        "Plot":"A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "Language":"English, Swedish, Italian, French",
+        "Country":"United States, Mexico",
+        "Awards":"Won 11 Oscars. 126 wins & 83 nominations total",
+        "Poster":"https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_SX300.jpg","Metascore":"75","imdbRating":"7.9",
+        "imdbVotes":"1,322,762",
+        "imdbID":"tt0120338",
+        "Type":"movie","DVD":"N/A","BoxOffice":"$674,292,608",
+        "Production":"N/A",
+        "Website":"N/A",
+        "Response":"True"
+    },
+    {"Title":"Batman",
+        "Year":"1989",
+        "Rated":"PG-13",
+        "Released":"23 Jun 1989",
+        "Runtime":"126 min",
+        "Genre":"Action, Adventure",
+        "Director":"Tim Burton",
+        "Writer":"Bob Kane, Sam Hamm, Warren Skaaren",
+        "Actors":"Michael Keaton, Jack Nicholson, Kim Basinger",
+        "Plot":"The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker."
+        ,"Language":"English, French, Spanish",
+        "Country":"United States, United Kingdom",
+        "Awards":"Won 1 Oscar. 13 wins & 30 nominations total",
+        "Poster":"https://m.media-amazon.com/images/M/MV5BYzZmZWViM2EtNzhlMi00NzBlLWE0MWEtZDFjMjk3YjIyNTBhXkEyXkFqcGc@._V1_SX300.jpg",
+        "Ratings":[{"Source":"Internet Movie Database","Value":"7.5/10"},{"Source":"Rotten Tomatoes","Value":"77%"},{"Source":"Metacritic","Value":"69/100"}],"Metascore":"69","imdbRating":"7.5","imdbVotes":"417,346","imdbID":"tt0096895","Type":"movie","DVD":"N/A","BoxOffice":"$251,409,241","Production":"N/A","Website":"N/A","Response":"True"},
+
+    {"Title":"Tenet",
+        "Year":"2020",
+        "Rated":"PG-13",
+        "Released":"03 Sep 2020",
+        "Runtime":"150 min",
+        "Genre":"Action, Sci-Fi, Thriller","Director":"Christopher Nolan",
+        "Writer":"Christopher Nolan","Actors":"John David Washington, Robert Pattinson, Elizabeth Debicki",
+        "Plot":"Armed with only the word \"Tenet,\" and fighting for the survival of the entire world, CIA operative, The Protagonist, journeys through a twilight world of international espionage on a global mission that unfolds beyond real time.",
+        "Language":"English",
+        "Country":"United States, United Kingdom",
+        "Awards":"Won 1 Oscar. 49 wins & 139 nominations total",
+        "Poster":"https://m.media-amazon.com/images/M/MV5BMTU0ZjZlYTUtYzIwMC00ZmQzLWEwZTAtZWFhMWIwYjMxY2I3XkEyXkFqcGc@._V1_SX300.jpg",
+        "Ratings":[{"Source":"Internet Movie Database","Value":"7.3/10"},{"Source":"Rotten Tomatoes","Value":"70%"},{"Source":"Metacritic","Value":"69/100"}],"Metascore":"69","imdbRating":"7.3","imdbVotes":"622,293","imdbID":"tt6723592","Type":"movie","DVD":"N/A","BoxOffice":"$58,504,105","Production":"N/A","Website":"N/A",
+        "Response":"True"},
+        {"Title":"Game of Thrones","Year":"2011–2019","Rated":"TV-MA","Released":"17 Apr 2011","Runtime":"57 min","Genre":"Action, Adventure, Drama","Director":"N/A","Writer":"David Benioff, D.B. Weiss","Actors":"Emilia Clarke, Peter Dinklage, Kit Harington","Plot":"Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.","Language":"English","Country":"United States, United Kingdom","Awards":"Won 59 Primetime Emmys. 398 wins & 655 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"9.2/10"}],"Metascore":"N/A","imdbRating":"9.2","imdbVotes":"2,409,483","imdbID":"tt0944947","Type":"series","totalSeasons":"8","Response":"True"},
+        {"Title":"Money Heist","Year":"2017–2021","Rated":"TV-MA","Released":"02 May 2017","Runtime":"70 min","Genre":"Action, Crime, Drama","Director":"N/A","Writer":"Álex Pina","Actors":"Úrsula Corberó, Álvaro Morte, Itziar Ituño","Plot":"An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.","Language":"Spanish, Russian, Serbian, English","Country":"Spain","Awards":"38 wins & 45 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.2/10"}],"Metascore":"N/A","imdbRating":"8.2","imdbVotes":"565,732","imdbID":"tt6468322","Type":"series","totalSeasons":"5","Response":"True"},
+        {"Title":"Sex Education","Year":"2019–2023","Rated":"TV-MA","Released":"11 Jan 2019","Runtime":"45 min","Genre":"Comedy, Drama, Romance","Director":"N/A","Writer":"Laurie Nunn","Actors":"Asa Butterfield, Gillian Anderson, Ncuti Gatwa","Plot":"A teenage boy with a sex-therapist mother teams up with a high-school classmate to set up an underground sex-therapy clinic at school.","Language":"English","Country":"United Kingdom","Awards":"Won 1 BAFTA Award21 wins & 79 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BOTE0MjQ1NDU3OV5BMl5BanBnXkFtZTgwNTI4MTgwNzM@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.2/10"}],"Metascore":"N/A","imdbRating":"8.2","imdbVotes":"374,558","imdbID":"tt7767422","Type":"series","totalSeasons":"4","Response":"True"},
+        {"Title":"Anora","Year":"2024","Rated":"R","Released":"08 Nov 2024","Runtime":"139 min","Genre":"Comedy, Drama, Romance","Director":"Sean Baker","Writer":"Sean Baker","Actors":"Mikey Madison, Paul Weissman, Yura Borisov","Plot":"A young stripper from Brooklyn meets and impulsively marries the son of a Russian oligarch. Once the news reaches Russia, her fairy tale is threatened as his parents set out for New York to get the marriage annulled.","Language":"English, Russian, Armenian","Country":"United States","Awards":"Won 5 Oscars. 150 wins & 272 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"7.5/10"},{"Source":"Rotten Tomatoes","Value":"93%"},{"Source":"Metacritic","Value":"91/100"}],"Metascore":"91","imdbRating":"7.5","imdbVotes":"176,420","imdbID":"tt28607951","Type":"movie","DVD":"N/A","BoxOffice":"$20,474,295","Production":"N/A","Website":"N/A","Response":"True"},
+        {"Title":"Seven Samurai","Year":"1954","Rated":"Not Rated","Released":"19 Nov 1956","Runtime":"207 min","Genre":"Action, Drama","Director":"Akira Kurosawa","Writer":"Akira Kurosawa, Shinobu Hashimoto, Hideo Oguni","Actors":"Toshirô Mifune, Takashi Shimura, Keiko Tsushima","Plot":"Farmers from a village exploited by bandits hire a veteran samurai for protection, and he gathers six other samurai to join him.","Language":"Japanese","Country":"Japan","Awards":"Nominated for 2 Oscars. 5 wins & 9 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BZjliMWExOTMtZDQ3ZS00NWU3LWIyN2EtMjllNzk3ZTNlYzg4XkEyXkFqcGc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.6/10"},{"Source":"Rotten Tomatoes","Value":"100%"},{"Source":"Metacritic","Value":"98/100"}],"Metascore":"98","imdbRating":"8.6","imdbVotes":"379,094","imdbID":"tt0047478","Type":"movie","DVD":"N/A","BoxOffice":"$820,278","Production":"N/A","Website":"N/A","Response":"True"},
+        {"Title":"Fight Club","Year":"1999","Rated":"R","Released":"15 Oct 1999","Runtime":"139 min","Genre":"Drama","Director":"David Fincher","Writer":"Chuck Palahniuk, Jim Uhls","Actors":"Brad Pitt, Edward Norton, Meat Loaf","Plot":"An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.","Language":"English","Country":"Germany, United States","Awards":"Nominated for 1 Oscar. 12 wins & 38 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.8/10"},{"Source":"Rotten Tomatoes","Value":"81%"},{"Source":"Metacritic","Value":"67/100"}],"Metascore":"67","imdbRating":"8.8","imdbVotes":"2,441,943","imdbID":"tt0137523","Type":"movie","DVD":"N/A","BoxOffice":"$37,030,102","Production":"N/A","Website":"N/A","Response":"True"},
+        {"Title":"Train to Busan","Year":"2016","Rated":"Not Rated","Released":"20 Jul 2016","Runtime":"118 min","Genre":"Action, Horror, Thriller","Director":"Yeon Sang-ho","Writer":"Park Joo-suk, Yeon Sang-ho","Actors":"Gong Yoo, Jung Yu-mi, Ma Dong-seok","Plot":"While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan.","Language":"Korean, Hawaiian, English","Country":"South Korea","Awards":"36 wins & 42 nominations total","Poster":"https://m.media-amazon.com/images/M/MV5BMTkwOTQ4OTg0OV5BMl5BanBnXkFtZTgwMzQyOTM0OTE@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"7.6/10"},{"Source":"Rotten Tomatoes","Value":"95%"},{"Source":"Metacritic","Value":"73/100"}],"Metascore":"73","imdbRating":"7.6","imdbVotes":"279,876","imdbID":"tt5700672","Type":"movie","DVD":"N/A","BoxOffice":"$2,129,768","Production":"N/A","Website":"N/A","Response":"True"}
+    
+] 
+export default MoviesData;

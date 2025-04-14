@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: whitesmoke;
+}
+#Movie-wala{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    h1{
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+}
+#content-wala{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 600px;
+    height: 500px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+#poster-wala{
+    .images{
+        border-radius: 25px;
+    }
+}
