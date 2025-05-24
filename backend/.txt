@@ -1,0 +1,23 @@
+#these arethe packages added to the server 
+
+1.Dotenv = USED for store and load vairalbles , keeps senstive data like API keys , database urls and secert tokens out of source code
+
+2. express =>{
+    handles http req and res
+    offers = > Routing , middleWare , Intergration with data base
+}
+3. MOngoose =>{
+    database cloude connection
+}
+4. nodemon =removes manual restart 
+5. jsonwebtoken = 
+6. resend = 
+7. cookie-parser =
+
+"cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "nodemon": "^3.1.10",
+    "resend": "^4.5.1"
